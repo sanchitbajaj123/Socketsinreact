@@ -22,7 +22,7 @@ const App = () => {
         return () => {
             socket.disconnect(); // Clean up on unmount
         };
-    }, []);
+    }, [input]);
 
     const sendMessage = () => {
         socket.emit('sendData', input);
